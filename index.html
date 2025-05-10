@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Animation</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+    body{
+        font-variant: small-caps;
+    }
+    @keyframes foam
+    {
+        from{margin-left: -100%;}
+        to{margin-left: 10%; color: purple;}
+        0%{opacity: 0;}
+        20%{opacity: 0.4;}
+        50%{opacity: 0.6;}
+        80%{opacity: 0.8;}
+        100%{opacity: 1;}
+    }
+    #head1{
+        margin-top: 22%;
+        animation: foam 10s 1;
+        animation-fill-mode: forwards;
+        margin-left: 10%;
+        font-weight: bold;
+    }
+
+</style>
+<body>
+    <h1 id="head1" class="w3-center w3-sans-serif ">Just one small positive thought in the morning can change your whole day</h1>
+</body>
+</html>
